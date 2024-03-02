@@ -1,0 +1,42 @@
+body {
+  margin: 2rem;
+  background-color: #9e7e61;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap:2rem;
+  justify-content: center;
+}
+.event-card{
+  overflow: hidden;
+  box-shadow: 0 2px 20px;
+  border-radius:5px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: bisque;
+  transition: transform 0.3s ease;
+}
+img{
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+title{
+  padding: 1rem;
+}
+
+.view-more{
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid;
+  background: transparent;
+}
+p{
+  padding: 0.1rem 1rem 0.1rem;
+}
+.event-card:hover{
+  transform:scale(1.1)
+}
